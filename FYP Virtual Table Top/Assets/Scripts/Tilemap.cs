@@ -8,7 +8,7 @@ using System.Collections;
 public class Tilemap : MonoBehaviour {
     public int size_x = 100;
     public int size_z = 50;
-    float tilesize = 1.0f;
+    public float tilesize = 1.0f;
 
     // Use this for initialization
     void Start () {
