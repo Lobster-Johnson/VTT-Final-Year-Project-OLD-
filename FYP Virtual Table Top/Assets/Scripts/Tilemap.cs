@@ -76,7 +76,7 @@ public class Tilemap : MonoBehaviour {
 
         //assign mesh to filterer/renderer/collider
         MeshFilter mf = GetComponent<MeshFilter>();
-        MeshRenderer mr = GetComponent<MeshRenderer>();
+        //MeshRenderer mr = GetComponent<MeshRenderer>();
         MeshCollider mc = GetComponent<MeshCollider>();
 
         mf.mesh = mesh;
