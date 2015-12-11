@@ -55,16 +55,16 @@ public class SimpleCameraControl : MonoBehaviour {
             ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
-                Debug.Log("Selected " + hit.transform.gameObject.name);
+                //Debug.Log("Selected " + hit.transform.gameObject.name);
 
             }
             if (Input.GetTouch(0).phase == TouchPhase.Began)
             {
-                Debug.Log("Touch Began");
+                //Debug.Log("Touch Began");
             }
             if (Input.GetTouch(0).phase == TouchPhase.Moved)
             {
-                Debug.Log("Touch Moved");
+                //Debug.Log("Touch Moved");
                 Vector2 delta = Input.GetTouch(0).deltaPosition;
 
                 float positionX = (delta.x * movesensitivityX * Time.deltaTime) * -1;
@@ -74,7 +74,7 @@ public class SimpleCameraControl : MonoBehaviour {
             }
             if (Input.GetTouch(0).phase == TouchPhase.Ended)
             {
-                Debug.Log("Touch Ended");
+                //Debug.Log("Touch Ended");
             }
         }
 
