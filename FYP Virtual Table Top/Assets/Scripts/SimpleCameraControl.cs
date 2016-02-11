@@ -26,7 +26,8 @@ public class SimpleCameraControl : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update ()
+    {
         //wasd controls for debug
         if (Input.GetKey(forward))
         {
