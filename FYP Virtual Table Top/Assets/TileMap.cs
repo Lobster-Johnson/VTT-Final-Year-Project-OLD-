@@ -160,7 +160,7 @@ public class TileMap : MonoBehaviour
         return new Vector3(x, y, 0);
     }
 
-    //move creature to this location
+    //path creature to this location
     public void Destination(int x, int y)
     {
         //clear out preexisting path
