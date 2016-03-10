@@ -165,11 +165,7 @@ public class TileMap : MonoBehaviour
     {
         //clear out preexisting path
         PC.GetComponent<Creature>().currentPath = null;
-
-        //update the creatures location to the destination, hardcode to destination
-        //PC.GetComponent<Creature>().tileX = x;
-        //PC.GetComponent<Creature>().tileY = y;
-        //PC.transform.position = new Vector3(x, y, -5);
+        
 
         //warning: following algorithm isn't the right one. Replace with A*
         Dictionary<Node, float> dist = new Dictionary<Node, float>();
